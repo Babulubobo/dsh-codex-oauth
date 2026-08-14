@@ -1,0 +1,44 @@
+{
+  "name": "dsh-codex-oauth",
+  "version": "0.1.0",
+  "description": "OpenAI Codex (ChatGPT Plus/Pro) OAuth adapter for the DeepSeek Harness LLM seam",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "bin": {
+    "codex-login": "bin/codex-login.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "codex",
+    "codex-pro",
+    "openai",
+    "chatgpt",
+    "oauth",
+    "llm",
+    "adapter"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": "*",
+    "@deepseek-ai/dsh-home-paths": "*",
+    "@deepseek-ai/dsh-timeout": "*",
+    "@earendil-works/pi-ai": "*"
+  },
+  "peerDependenciesMeta": {
+    "*": {
+      "optional": true
+    }
+  }
+}

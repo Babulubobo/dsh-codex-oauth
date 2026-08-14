@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# build / runtime artifacts
+*.log
+*.tmp
+
+# macOS
+.DS_Store
+
+# secrets — never commit OAuth credentials
+codex-oauth.json
+*.credentials.yaml
+.env
