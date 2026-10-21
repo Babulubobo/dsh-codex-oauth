@@ -2,8 +2,7 @@
 /**
  * Terminal login for the OpenAI Codex (ChatGPT Plus/Pro) OAuth adapter.
  *
- * Run from inside the profile's node_modules tree (where the harness module
- * fallback resolves `@deepseek-ai/*` and `@earendil-works/pi-ai`), e.g.:
+ * Run from an installed package; the helper needs no dsh module fallback:
  *
  *   node "$DSH_HOME/profiles/web/node_modules/dsh-codex-oauth/bin/codex-login.mjs"
  *
@@ -18,7 +17,7 @@ import {
   credentialPath,
   loginCodex,
   openBrowser,
-} from "../lib/index.js";
+} from "../lib/auth.js";
 
 const args = process.argv.slice(2);
 const logout = args.includes("--logout");
